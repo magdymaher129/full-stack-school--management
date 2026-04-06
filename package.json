@@ -6,9 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:test": "tsx scripts/test-database.ts",
+    "db:student": "tsx scripts/test-student-database.ts",
+   "db:fee":"tsx scripts/test-fee-database.ts",
+   "db:teacher":"tsx scripts/test-teacher-database.ts",
+   "db:class":"tsx scripts/test-class-database.ts",
+    "db:studio": "prisma studio",
+    "db:studentFee":"tsx scripts/test-studentFee-database.ts"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.6.0",
+    "@prisma/client": "^7.6.0",
+    "@supabase/ssr": "^0.10.0",
+    "@supabase/supabase-js": "^2.101.1",
+    "dotenv": "^17.4.0",
     "next": "16.2.2",
     "react": "19.2.4",
     "react-dom": "19.2.4"
@@ -20,7 +32,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.2",
+    "prisma": "^7.6.0",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
